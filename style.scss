@@ -1,0 +1,365 @@
+@import "colors";
+@import "fonts";
+
+/* -------------- Global Styles --------- */
+* {
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+  font-family: $font;
+}
+/* -------------- Header Section --------- */
+/* -------------- Navbar --------- */
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+}
+
+.header__nav > * {
+  flex: 1;
+}
+
+.header__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__left > li {
+  list-style: none;
+  margin-left: 2rem;
+}
+
+.dropdown-icon {
+  margin-left: 0.7rem;
+}
+
+.header__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.header__right > div {
+  margin-right: 3rem;
+  padding-left: 3rem;
+  list-style: none;
+  border-left: 1px solid $placeholder-text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorites-btn-container {
+  display: grid;
+
+  .icon-hover {
+    grid-row: 1;
+    grid-column: 1;
+    opacity: 0;
+    transition: .5s;
+  }
+
+  .icon-default {
+    grid-row: 1;
+    grid-column: 1;
+    opacity: 1;
+    transition: .5s;
+  }
+
+  &:hover {
+    .icon-hover {
+			opacity: 1;
+		}
+		.icon-default {
+			opacity: 0;
+		}
+  }
+}
+/* -------------- Header Section --------- */
+/* -------------- Hero Image --------- */
+
+.home-hero {
+  position: relative;
+  height: 80vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-hero .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.home-hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.hero-heading {
+  font-family: $font;
+  font-size: 4rem;
+  position: absolute;
+  left: 24vw;
+  top: 38vh;
+  color: $heading-light;
+  font-weight: 500;
+  text-align: center;
+  z-index: 4;
+}
+
+#overlay {
+  position: absolute; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 80%; /* Full height (cover the whole page) */
+  top: 20;
+  left: 0;
+  right: 0;
+  bottom: 20;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.flex-form {
+  position: absolute;
+  padding: 30px;
+  background-color: $background-light;
+  left: 30vw;
+  top: 58vh; 
+  z-index: 4;
+
+  .search-icon {
+    color: $site-gold;
+    opacity: 0.7;
+  }
+
+}
+
+.flex-form > * {
+  border:0;
+  padding: 10px;
+  background:white;
+  line-height:25px;
+  font-size: 0.8rem;
+  border-radius:0;
+  outline:0;
+  -webkit-appearance:none;
+}
+
+.search-btn {
+  background: $button-gold;
+  opacity: 0.7;
+  border: 1px solid $site-gold;
+  color: $button-light;
+  font-weight: 600;
+  padding: 10px 35px;
+  font-size: 0.9;
+  transition: 0.25s;
+  &:hover,
+  &:focus {
+    color: $button-light;
+    opacity: 1;
+    box-shadow: inset 0 -3.5em 0 0 $button-dark;
+  }
+}
+
+.flex-form > i {
+  padding: 0;
+}
+
+input[type="search"] {
+  width: 20vw;
+}
+
+/* -------------- Main Body --------- */
+/* -------------- Introduction Section --------- */
+
+.intro {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  margin-top: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 5vw;
+  & > *{
+    margin: 0 20px;
+  }
+}
+
+.intro__text {
+  margin-top: 20px;
+  grid-column: 1;
+}
+
+.intro-links {
+  color: $button-gold;
+}
+
+.container > h2 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 30px;
+  color: $heading-dark;
+}
+
+.container > h2 > span {
+  font-weight: bold;
+}
+
+.container > h3 {
+  margin-top: 0.8rem;
+}
+
+.container > p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  font-weight: 200;
+  color: $text-light;
+  letter-spacing: 1px;
+}
+
+.intro__about {
+  grid-column: 2;
+}
+
+.intro__difference {
+  grid-column: 3;
+}
+
+.intro__sustainability {
+  grid-column: 4;
+}
+
+.container img {
+  height: auto;
+  width: 100%;
+}
+
+/* Services Section */
+.service__container {
+  display: flex;
+  margin-bottom: 10vh;
+}
+
+.service__col {
+  flex: 1;
+  background-color: $section-background-dark;
+  height: 70vh;
+}
+
+.service__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.service__col:nth-child(2) {
+  background-image: url('https://assets.spitfirehomes.co.uk/app/uploads/2021/07/06104622/3Z9A5800-Large.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.service-heading {
+  font-family: $font;
+  color: $heading-light;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.service-description {
+  margin: 1rem auto;
+  font-family: $font;
+  color: $heading-light;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* -------------- Main Body --------- */
+/* -------------- News Section --------- */
+
+.news {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  margin-top: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 5vw;
+  & > *{
+    margin: 0 20px;
+  }
+}
+
+.news__text {
+  margin-top: 20px;
+  grid-column: 1;
+}
+
+.news-links {
+  color: $button-gold;
+}
+
+.container > h2 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 30px;
+  color: $heading-dark;
+}
+
+.container > h2 > span {
+  font-weight: bold;
+}
+
+.container > h3 {
+  margin-top: 0.8rem;
+}
+
+.container > p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  font-weight: 200;
+  color: $text-light;
+  letter-spacing: 1px;
+}
+
+.news__about {
+  grid-column: 2;
+}
+
+.news__difference {
+  grid-column: 3;
+}
+
+.news__sustainability {
+  grid-column: 4;
+}
+
+.container img {
+  height: auto;
+  width: 100%;
+}
