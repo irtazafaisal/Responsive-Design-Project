@@ -200,6 +200,21 @@ input[type=search] {
   grid-column: 1;
 }
 
+.intro__cta {
+  background-color: #F4F4F4;
+  color: #2A312E;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: 1px solid #F4F4F4;
+  font-size: 1rem;
+  font-weight: bolder;
+  transition: 0.25s;
+}
+.intro__cta:hover, .intro__cta:focus {
+  color: #F4F4F4;
+  box-shadow: inset 0 -3.5em 0 0 #2A312E;
+}
+
 .intro-links {
   color: #998152;
 }
@@ -285,6 +300,23 @@ input[type=search] {
   text-align: center;
 }
 
+.service__cta {
+  background-color: #2A312E;
+  opacity: 0.9;
+  color: #F4F4F4;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: 1px solid #2A312E;
+  font-size: 1rem;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+.service__cta:hover, .service__cta:focus {
+  color: #F4F4F4;
+  opacity: 1;
+  box-shadow: inset 0 -3.5em 0 0 #1F2221;
+}
+
 /* -------------- Main Body --------- */
 /* -------------- News Section --------- */
 .news {
@@ -347,4 +379,201 @@ input[type=search] {
 .container img {
   height: auto;
   width: 100%;
+}
+
+.news__cta {
+  background-color: #F4F4F4;
+  color: #2A312E;
+  padding: 1rem 2.5rem;
+  margin-top: 1rem;
+  border: 1px solid #F4F4F4;
+  font-size: 1rem;
+  font-weight: bolder;
+  transition: 0.25s;
+}
+.news__cta:hover, .news__cta:focus {
+  color: #F4F4F4;
+  box-shadow: inset 0 -3.5em 0 0 #2A312E;
+}
+
+/* -------------Main Body ------- */
+/*----------- Company Section*---------*/
+.company {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  margin-top: 20vh;
+  background-color: #EDEDED;
+  padding: 12vh 5vw;
+}
+.company > * {
+  margin: 0 20px;
+}
+
+.company-container {
+  background-color: #FFFFFF;
+  min-height: 32vh;
+}
+
+.company-container > h3 {
+  margin-top: 0.8rem;
+  margin-left: 0.8rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #2A312E;
+}
+
+.company-container > p {
+  margin: 0.8rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 200;
+  color: #2A312E;
+  letter-spacing: 1px;
+}
+
+.company__land {
+  grid-column: 1;
+}
+
+.company__difference {
+  grid-column: 2;
+}
+
+.company__customer {
+  grid-column: 3;
+}
+
+.company__sustainability {
+  grid-column: 4;
+}
+
+.company-container img {
+  height: auto;
+  width: 100%;
+}
+
+/*----------Footer Section ------ */
+/*------------ Footer Top ----------*/
+.footer__top {
+  background-color: #2A312E;
+  padding: 10vh 12.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__col1 {
+  margin-top: 2vh;
+  margin-right: 10vw;
+}
+
+.footer__col2 {
+  display: flex;
+}
+
+.social-links {
+  list-style: none;
+  color: #FBFBFB;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.social-link-item {
+  margin-right: 2.2rem;
+}
+
+.footer-heading {
+  color: #998152;
+  opacity: 0.8;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.footer-menu-item {
+  font-size: 0.9rem;
+  color: #F4F4F4;
+  margin-bottom: 0.8rem;
+  list-style: none;
+  font-weight: bolder;
+}
+
+.footer__menu {
+  margin-right: 10vw;
+  line-height: 3vh;
+}
+
+/*---------- Footer Bottom ----------*/
+.footer__bottom {
+  background-color: #1F2221;
+  padding: 5vh;
+}
+
+.footer__bottom--container {
+  display: flex;
+  align-items: center;
+  margin-left: 10vw;
+}
+
+.footer__bottom--left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.policy-menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #FBFBFB;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.policy-menu-item {
+  margin-right: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.footer__bottom--text {
+  color: #BBBCB5;
+  font-size: 0.8rem;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
+}
+
+.partners > img {
+  height: 3rem;
+  width: 3rem;
+  margin: 0 20px;
+}
+
+.contact-number {
+  color: #FBFBFB;
+  margin-bottom: 2vh;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-number .contact-label {
+  margin-right: 2vw;
+}
+
+.address {
+  margin: 2vh 0;
+}
+.address .address-text {
+  color: #FBFBFB;
+  line-height: 2.1vh;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=style.css.map */
