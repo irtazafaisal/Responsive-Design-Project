@@ -16,22 +16,25 @@
     <!-- Navigation Bar -->
     <nav class="header__nav">
         <div class="header__left">
-            <li>Find Your Home</li>
-            <li>Buying With Spitfire</li><i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            <li class="hidden-mobile hidden-tablet">Find Your Home</li>
+            <li class="hidden-mobile hidden-tablet">Buying With Spitfire</li><i class="fa-solid fa-chevron-down dropdown-icon hidden-mobile hidden-tablet"></i>
+            <i class="fas fa-search hidden-desktop search-icon-mobile-nav"></i>
         </div>
         <div class="header__logo">
           <img src="https://assets.spitfirehomes.co.uk/app/uploads/2021/01/19084810/spitfire-logo.svg" 
           alt="Spitfire-Logo" class="logo-desktop">
+          <img src="https://assets.spitfirehomes.co.uk/app/uploads/2021/01/19084810/spitfire-logo-m.svg" alt="" class="logo-mobile hidden-desktop">
         </div>
         <div class="header__right">
-          <div class="favorites-btn">
-            <div class="favorites-btn-container">
-              <i class="fa-solid fa-heart icon-hover"></i>
-              <i class="far fa-heart fa-1x icon-default"></i>
+          <div class="favorites-btn hidden-mobile hidden-tablet">
+            <div class="favorites-btn-container hidden-mobile hidden-tablet">
+              <i class="fa-solid fa-heart icon-hover hidden-tablet"></i>
+              <i class="far fa-heart fa-1x icon-default hidden-tablet"></i>
             </div>
           </div>
           <div class="hamburger-desktop">
-            <i class="fa-solid fa-bars fa-2x"></i>
+            <i class="fa-solid fa-bars fa-2x hidden-mobile hidden-tablet"></i>
+            <i class="fa-solid fa-bars fa-1x hidden-desktop hamburger-mobile"></i>
           </div>
       </div>
     </nav>
@@ -46,8 +49,8 @@
         <h1 class="hero-heading">Creating sustainable communities,<br> designed to inspire</h1>
 
         <form  class="flex-form">
-          <input type="search" placeholder="Search by Postcode or Area">
-          <i class="fa-solid fa-location-dot search-icon"></i><input type="button" value="Current location">
+          <input type="search" class="search-field" placeholder="Search by Postcode or Area">
+          <i class="fa-solid fa-location-dot search-icon hidden-mobile hidden-tablet"></i><input class="hidden-mobile hidden-tablet" type="button" value="Current location">
           <input type="submit" value="FIND A HOME" class="search-btn">
         </form>
 
@@ -68,36 +71,73 @@
           </button>
         </div>
       </div>
-      <div class="intro__about">
+      <div class="intro__about hidden-tablet">
         <div class="container">
           <img src="https://assets.spitfirehomes.co.uk/app/uploads/2021/03/03094546/The-Gate-1-1334x890.jpg" alt="About-us-cover">
-          <h3>About Us</h3>
-          <p>Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
-          <a class="intro-links">Learn More</a>
+          <h3 class="hidden-mobile">About Us</h3>
+          <div class="intro-heading-container-mobile hidden-desktop"><h3 class="hidden-desktop">About Us</h3> <i class="fa-solid fa-chevron-right dropdown-icon hidden-desktop intro-icon-mobile"></i></div>
+          <p class="hidden-mobile">Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+          <a class="intro-links hidden-mobile">Learn More</a>
         </div>
       </div>
-      <div class="intro_difference">
+      <div class="intro_difference hidden-tablet">
         <div class="container">
           <img src="https://assets.spitfirehomes.co.uk/app/uploads/2021/02/26151854/Untitled-3-1334x890.png" alt="About-us-cover">
-          <h3>About Us</h3>
-          <p>Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
-          <a class="intro-links">Learn More</a>
+          <h3 class="hidden-mobile">The Spitfire Difference</h3>
+          <div class="intro-heading-container-mobile hidden-desktop"><h3 class="hidden-desktop">The Spitfire Difference</h3> <i class="fa-solid fa-chevron-right dropdown-icon hidden-desktop intro-icon-mobile"></i></div>
+          <p class="hidden-mobile">Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+          <a class="intro-links hidden-mobile">Learn More</a>
         </div>
       </div>
-      <div class="intro__sustainability">
+      <div class="intro__sustainability hidden-tablet">
         <div class="container">
           <img src="https://assets.spitfirehomes.co.uk/app/uploads/2022/06/18085207/Aldington-1334x890.jpg" alt="About-us-cover">
-          <h3>About Us</h3>
-          <p>Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
-          <a class="intro-links">Learn More</a>
+          <h3 class="hidden-mobile">Commitment to Sustainability</h3>
+          <div class="intro-heading-container-mobile hidden-desktop"><h3 class="hidden-desktop">Commitment to Sustainability</h3> <i class="fa-solid fa-chevron-right dropdown-icon hidden-desktop intro-icon-mobile"></i></div>
+          <p class="hidden-mobile">Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+          <a class="intro-links hidden-mobile">Learn More</a>
         </div>
       </div>
+      
+      <div class="tablet-intro hidden-desktop hidden-mobile">
+        <div class="intro__about">
+          <div class="container">
+            <img src="https://assets.spitfirehomes.co.uk/app/uploads/2021/03/03094546/The-Gate-1-1334x890.jpg" alt="About-us-cover">
+            <h3 class="hidden-mobile">About Us</h3>
+            <div class="intro-heading-container-mobile hidden-desktop"><h3 class="hidden-desktop">About Us</h3> <i class="fa-solid fa-chevron-right dropdown-icon hidden-desktop intro-icon-mobile"></i></div>
+            <p class="hidden-mobile">Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+            <a class="intro-links hidden-mobile">Learn More</a>
+          </div>
+        </div>
+        <div class="intro_difference">
+          <div class="container">
+            <img src="https://assets.spitfirehomes.co.uk/app/uploads/2021/02/26151854/Untitled-3-1334x890.png" alt="About-us-cover">
+            <h3 class="hidden-mobile">The Spitfire Difference</h3>
+            <div class="intro-heading-container-mobile hidden-desktop"><h3 class="hidden-desktop">The Spitfire Difference</h3> <i class="fa-solid fa-chevron-right dropdown-icon hidden-desktop intro-icon-mobile"></i></div>
+            <p class="hidden-mobile">Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+            <a class="intro-links hidden-mobile">Learn More</a>
+          </div>
+        </div>
+        <div class="intro__sustainability">
+          <div class="container">
+            <img src="https://assets.spitfirehomes.co.uk/app/uploads/2022/06/18085207/Aldington-1334x890.jpg" alt="About-us-cover">
+            <h3 class="hidden-mobile">Commitment to Sustainability</h3>
+            <div class="intro-heading-container-mobile hidden-desktop"><h3 class="hidden-desktop">Commitment to Sustainability</h3> <i class="fa-solid fa-chevron-right dropdown-icon hidden-desktop intro-icon-mobile"></i></div>
+            <p class="hidden-mobile">Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+            <a class="intro-links hidden-mobile">Learn More</a>
+          </div>
+        </div>
+      </div>
+
     </section>
     
     <!-- Services Section -->
     <section class="service">
       <div class="service__container">
-        <div class="service__col service__left">
+        <div class="service__top--mobile hidden-desktop">
+          <img src="https://assets.spitfirehomes.co.uk/app/uploads/2021/07/06104622/3Z9A5800-Large.jpg" alt="" class="service-img">
+        </div>
+        <div class="service__col service__left service__bottom--mobile">
           <h2 class="service-heading">
             Introducing Spitfire Concierge
           </h2>
@@ -108,7 +148,7 @@
             Find Out More
           </button>
         </div>
-        <div class="service__col"></div>
+        <div class="service__col service__right--desktop hidden-mobile"></div>
       </div>
     </section>
 
@@ -123,29 +163,62 @@
           </button>
         </div>
       </div>
-      <div class="news__about">
+      <div class="news__about hidden-tablet">
         <div class="container">
           <img src="https://assets.spitfirehomes.co.uk/app/uploads/2022/05/27102001/DSC_2816-1-edit-Custom-1334x890.jpg" alt="About-us-cover">
-          <h3>About Us</h3>
-          <p>Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+          <p class="news-date hidden-desktop">06 March 2023</p>
+          <h3>Starting With a Blank Canvas</h3>
+          <p class="hidden-mobile">Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
           <a class="news-links">Learn More</a>
         </div>
       </div>
-      <div class="news_difference">
+      <div class="news_difference hidden-tablet">
         <div class="container">
           <img src="https://assets.spitfirehomes.co.uk/app/uploads/2021/08/19103722/Spitfire_Homes_BEN_ADAMS_PHOTO-006-1334x890.jpg" alt="About-us-cover">
-          <h3>About Us</h3>
-          <p>Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+          <p class="news-date hidden-desktop">06 March 2023</p>
+          <h3>Do Air Source Heat Pumps have a PR Problem?</h3>
+          <p class="hidden-mobile">Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
           <a class="news-links">Learn More</a>
         </div>
       </div>
-      <div class="news__sustainability">
+      <div class="news__sustainability hidden-tablet">
         <div class="container">
           <img src="https://assets.spitfirehomes.co.uk/app/uploads/2021/09/03142922/DSC_1726-w-1334x890.jpg" alt="About-us-cover">
-          <h3>About Us</h3>
-          <p>Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+          <p class="news-date hidden-desktop">06 March 2023</p>
+          <h3>Spitfire Homes kickstarts New Year with stunning show home launch in Royal Leamington Spa</h3>
+          <p class="hidden-mobile">Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+          <a class="news-links">Learn More</a>
         </div>
       </div>
+
+      <div class="tablet-news hidden-mobile hidden-desktop">
+        <div class="news__about ">
+          <div class="container">
+            <img src="https://assets.spitfirehomes.co.uk/app/uploads/2022/05/27102001/DSC_2816-1-edit-Custom-1334x890.jpg" alt="About-us-cover">
+            <p class="news-date hidden-desktop">06 March 2023</p>
+            <h3>Starting With a Blank Canvas</h3>
+            <p class="hidden-mobile">Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+            <a class="news-links">Learn More</a>
+          </div>
+        </div>
+        <div class="news_difference ">
+          <div class="container">
+            <img src="https://assets.spitfirehomes.co.uk/app/uploads/2021/08/19103722/Spitfire_Homes_BEN_ADAMS_PHOTO-006-1334x890.jpg" alt="About-us-cover">
+            <p class="news-date hidden-desktop">06 March 2023</p>
+            <h3>Do Air Source Heat Pumps have a PR Problem?</h3>
+            <p class="hidden-mobile">Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+            <a class="news-links">Learn More</a>
+          </div>
+        </div>
+        <div class="news__sustainability ">
+          <div class="container">
+            <img src="https://assets.spitfirehomes.co.uk/app/uploads/2021/09/03142922/DSC_1726-w-1334x890.jpg" alt="About-us-cover">
+            <p class="news-date hidden-desktop">06 March 2023</p>
+            <h3>Spitfire Homes kickstarts New Year with stunning show home launch in Royal Leamington Spa</h3>
+            <p class="hidden-mobile">Forward thinking, design-led and committed to quality; We are Spitfire homes.</p>
+            <a class="news-links">Learn More</a>
+          </div>
+
     </section>
     
     <!-- Company Details Section -->
@@ -201,7 +274,17 @@
         </ul>
       </div>
       <div class="footer__col2">
-          <div class="footer__menu">
+          <div class="footer__menu--mobile hidden-desktop">
+            <div class="accordion">
+              <h6 class="footer-heading">Quick Links</h6>
+              <i class="fa-solid fa-plus accordion-icon"></i>
+            </div>
+            <div class="accordion">
+              <h6 class="footer-heading">Help</h6>
+              <i class="fa-solid fa-plus accordion-icon"></i>
+            </div>
+          </div>
+          <div class="footer__menu hidden-mobile">
             <h6 class="footer-heading">Quick Links</h6>
             <ul class="footer-menu-items">
               <li class="footer-menu-item">About Us</li>
@@ -212,7 +295,7 @@
               <li class="footer-menu-item">Land Required</li>
             </ul>
           </div>
-          <div class="footer__menu">
+          <div class="footer__menu hidden-mobile">
             <h6 class="footer-heading">Help</h6>
             <ul class="footer-menu-items">
               <li class="footer-menu-item">Contact Us</li>
